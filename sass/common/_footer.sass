@@ -1,0 +1,54 @@
+.footer
+  padding: rem(20px) 0
+  color: white
+  background: #EB5055
+
+  &__block
+    +tablet 
+      +grid(repeat(2, 1fr))
+
+  &__info
+    +tablet
+      padding-left: rem(20px)
+
+    &--desc
+      color: white
+      text-decoration: none
+
+  &__check
+    display: table-caption
+
+  &__field
+    width: 300px
+    height: 40px
+    color: #ffffff
+    margin-top: rem(15px)
+    background: #CA4549
+    border: none
+    border-radius: 5px
+
+    +tablet 
+      width: 100%
+
+    &--end
+      height: 200px
+
+  &__info--contact
+    display: grid
+    color: white
+
+  &__end
+    padding: rem(20px) 0
+    background: #303441
+
+    &--block
+      +phone
+        +flex($main: space-between)
+
+    &--icon
+      width: 200px
+      +flex($main: space-between)
+    
+
+.fas 
+  padding: 5px

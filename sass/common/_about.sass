@@ -1,0 +1,42 @@
+.about
+  padding: rem(20px) 0
+
+  &__list
+    margin-top: rem(20px)
+    list-style: none
+    padding: 0
+
+    +tablet 
+      +grid(repeat(2, 1fr), $gap: rem(25px))
+
+    +laptop
+      +grid(repeat(3,1fr))
+
+  &__item
+    margin: 0 auto
+    margin-top: rem(20px)
+    max-width: 300px
+  
+  &__item:nth-child(3)
+    +tablet 
+      grid-column: 1/3
+    
+    +laptop
+      grid-column: 3/4
+
+  &__icon
+    max-width: 200px
+    +flex($main: space-between)
+
+  &__fab
+    width: 40px
+    height: 40px
+    border: 1px solid #717791
+    border-radius: 50%
+    text-align: center
+
+.fab
+  color: #666D89
+  padding: 10px 0
+  font-size: 20px
+  text-decoration: none

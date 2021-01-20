@@ -1,0 +1,34 @@
+.portfolio
+  padding: rem(20px) 0
+  background: #303441
+
+  &__btn
+    background: #303441
+    border: 2px solid #5E647E
+    border-radius: 5px
+    margin-right: rem(10px)
+    margin-top: rem(10px)
+
+  &__list
+    margin-top: rem(20px)
+    list-style: none
+    padding: 0
+    text-align: center
+
+    +phone
+      +grid(repeat(2, 1fr), $gap: rem(20px))
+
+    +tablet 
+      +grid(repeat(3, 1fr), $gap: rem(20px))
+
+    +laptop
+      +grid(repeat(4, 1fr), $gap: rem(20px))
+
+  &__img
+    margin: rem(17px)
+    width: 225px
+    height: 190px
+    object-fit: cover
+
+    +phone
+      margin: 2px
